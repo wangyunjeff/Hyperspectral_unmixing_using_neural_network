@@ -6,6 +6,7 @@ import torch.optim as optim
 import torch.nn.functional as F
 from torch.autograd import Variable, Function
 
+
 class GaussianDropout(nn.Module):
     def __init__(self, alpha=1.0):
         # Constructor
