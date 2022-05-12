@@ -15,6 +15,8 @@ from utils.parse import ArgumentParser
 import utils.opts as opts
 
 print(1)
+print(2)
+
 # ------------------ Training -------------------- #
 # Load Data
 def train(opt):
