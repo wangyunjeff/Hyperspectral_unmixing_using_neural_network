@@ -5,13 +5,15 @@
 > Palsson B, Sigurdsson J, Sveinsson J R, et al. Hyperspectral unmixing using a neural network autoencoder[J]. IEEE Access, 2018, 6: 25646-25656.
 > 
 
-该论文利用全连接层估计出输入高光谱图像的端元和丰度，模型结构如图所示，分为Encoder部分和Decoder部分。Encoder部分将B波段数的HSI图像转化为R个数（端元个数）的丰度图。Decoder部分将丰度图（last hidden layer）再重新映射回HIS图像（output），last hidden layer与output之间的权重即为端元。
+该论文利用全连接层估计出输入高光谱图像的端元和丰度，模型结构如图所示，分为Encoder部分和Decoder部分。Encoder部分的输出作为丰度信息。Decoder部分将丰度图再重新映射回HIS图像，这部分的权重即为端元信息。从而了完成光谱数据的分解。
 
 ![Untitled](README.assets/Untitled.png)
 
 ## Top News
 
 2022.05.12 仓库创建。完成了论文中模型在Samson数据集上的训练与提取。
+- [ ] 基于3D卷积的自编码高光谱解码网络
+- [ ] 基于空谱联合自注意力的卷积自编码网络的高光谱图像解混方法
 
 ## 所需环境
 
